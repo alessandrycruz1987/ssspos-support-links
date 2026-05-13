@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "build:prod": "ionic build --prod -- --base-href=/ssspos-support-links/",
+    "build:prod": "ionic build --prod -- --base-href=/ssspos-support-links/ && cp www/index.html www/404.html",
     "upload": "npx angular-cli-ghpages --dir=www",
     "deploy": "npm run build:prod && npm run upload"
   },
