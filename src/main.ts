@@ -1,8 +1,8 @@
 // @
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideHttpClient } from '@angular/common/http';
-import { provideTranslateService } from '@ngx-translate/core';
-import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
+import { provideTranslateHttpLoader, TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {
   IonicRouteStrategy,
   provideIonicAngular
@@ -24,10 +24,7 @@ bootstrapApplication(AppComponent, {
     provideIonicAngular(),
     provideRouter(routes, withPreloading(PreloadAllModules)),
     provideHttpClient(),
-    provideTranslateService({ fallbackLang: 'en-US' }),
-    provideTranslateHttpLoader({
-      prefix: './assets/i18n/',
-      suffix: '.json',
-    }),
+    provideTranslateService(),
+    provideTranslateHttpLoader()
   ],
 });

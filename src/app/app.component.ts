@@ -1,5 +1,5 @@
 // @
-import { inject, Component } from '@angular/core';
+import { inject, Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import {
   IonApp,
@@ -17,29 +17,42 @@ import {
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
+  standalone: true,
   imports: [
     IonApp,
     IonRouterOutlet,
   ],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   private translate = inject(TranslateService);
 
   constructor() {
+    // Register required icons for the application
     addIcons({
       'mail': mail,
       'shield-checkmark': shieldCheckmark,
       'home': home
     });
+
+    // Define supported languages for SSSPOS
+    this.translate.addLangs(['en-US', 'es-MX', 'gn-PY']);
+
+    // Set fallback language if a key is missing in the current language
+    this.translate.setFallbackLang('en-US');
   }
 
   ngOnInit(): void {
-    this.translate.addLangs(['en-US', 'es-MX', 'gn-PY']);
-    this.translate.setFallbackLang('en-US');
+    const browserLang = this.translate.getBrowserLang(); // e.g., 'es'
 
-    const browserLang = this.translate.getBrowserLang();
-    const lang = browserLang?.match(/es|en/) ? browserLang : 'en-US';
+    let langToUse = 'en-US';
 
-    this.translate.use(lang);
+    // Simplified language detection logic
+    if (browserLang?.includes('es'))
+      langToUse = 'es-MX';
+    else if (browserLang?.includes('gn'))
+      langToUse = 'gn-PY';
+
+    // Load the translation file and set the active language
+    this.translate.use(langToUse);
   }
 }
