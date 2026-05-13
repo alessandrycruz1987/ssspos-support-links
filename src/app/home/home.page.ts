@@ -1,6 +1,4 @@
-// @
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   IonHeader,
@@ -16,7 +14,9 @@ import {
   IonFooter,
   IonAccordion,
   IonButton,
-  IonAccordionGroup
+  IonAccordionGroup,
+  IonText,
+  IonNote
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -40,7 +40,8 @@ import {
     IonAccordion,
     IonAccordionGroup,
     IonButton,
-    RouterLink
+    IonText,
+    IonNote
   ],
 })
 export class HomePage {

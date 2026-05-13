@@ -9,11 +9,10 @@
     <ion-row class="ion-justify-content-center">
       <ion-col size-xs="12" size-md="8" size-lg="6">
         <ion-accordion-group expand="inset">
-          <!-- Technical Support Accordion -->
+          <!-- Support Accordion -->
           <ion-accordion value="support">
             <ion-item slot="header" color="light">
               <ion-icon slot="start" name="mail" color="primary"></ion-icon>
-
               <ion-label>
                 <p>{{ 'HOME.SUPPORT_SUB' | translate }}</p>
                 <h2>{{ 'HOME.SUPPORT_TITLE' | translate }}</h2>
@@ -22,20 +21,17 @@
 
             <div class="ion-padding" slot="content">
               <p>{{ 'HOME.SUPPORT_DESC' | translate }}</p>
-
               <ion-button expand="block" fill="outline" href="mailto:alessandrycruz@gmail.com" class="ion-margin-top">
                 <ion-icon slot="start" name="mail"></ion-icon>
-
                 {{ 'HOME.SUPPORT_BTN' | translate }}
               </ion-button>
             </div>
           </ion-accordion>
 
-          <!-- Privacy Accordion -->
+          <!-- Privacy Policy Accordion (Embedded Content) -->
           <ion-accordion value="privacy">
             <ion-item slot="header" color="light">
               <ion-icon slot="start" name="shield-checkmark" color="primary"></ion-icon>
-
               <ion-label>
                 <p>{{ 'HOME.PRIVACY_SUB' | translate }}</p>
                 <h2>{{ 'HOME.PRIVACY_TITLE' | translate }}</h2>
@@ -43,13 +39,51 @@
             </ion-item>
 
             <div class="ion-padding" slot="content">
-              <p>{{ 'HOME.PRIVACY_DESC' | translate }}</p>
+              <!-- Privacy Policy Structure -->
+              <div class="privacy-container">
+                <h3 class="ion-no-margin">{{ 'PRIVACY.CARD_TITLE' | translate }}</h3>
+                <ion-note>{{ 'PRIVACY.LAST_UPDATE' | translate }}</ion-note>
 
-              <ion-item lines="none" [button]="true" detail="true" routerLink="/privacy-policy" class="ion-margin-top">
-                <ion-label color="primary">
-                  {{ 'HOME.PRIVACY_BTN' | translate }}
-                </ion-label>
-              </ion-item>
+                <ion-text color="dark">
+                  <p class="ion-padding-vertical" [innerHTML]="'PRIVACY.WELCOME' | translate"></p>
+
+                  <section>
+                    <h4>{{ 'PRIVACY.SEC1_TITLE' | translate }}</h4>
+                    <p [innerHTML]="'PRIVACY.SEC1_DESC' | translate"></p>
+                  </section>
+
+                  <section>
+                    <h4>{{ 'PRIVACY.SEC2_TITLE' | translate }}</h4>
+                    <p [innerHTML]="'PRIVACY.SEC2_DESC' | translate"></p>
+                  </section>
+
+                  <section>
+                    <h4>{{ 'PRIVACY.SEC3_TITLE' | translate }}</h4>
+                    <p [innerHTML]="'PRIVACY.SEC3_DESC' | translate"></p>
+                  </section>
+
+                  <section>
+                    <h4>{{ 'PRIVACY.SEC4_TITLE' | translate }}</h4>
+                    <p [innerHTML]="'PRIVACY.SEC4_DESC' | translate"></p>
+                  </section>
+
+                  <section>
+                    <h4>{{ 'PRIVACY.SEC5_TITLE' | translate }}</h4>
+                    <p [innerHTML]="'PRIVACY.SEC5_DESC' | translate"></p>
+                  </section>
+
+                  <section>
+                    <h4>{{ 'PRIVACY.SEC6_TITLE' | translate }}</h4>
+                    <p [innerHTML]="'PRIVACY.SEC6_DESC' | translate"></p>
+                  </section>
+                </ion-text>
+
+                <div class="ion-text-center ion-padding-top">
+                  <ion-note style="font-size: 0.8em;">
+                    {{ 'PRIVACY.FOOTER_NOTE' | translate }}
+                  </ion-note>
+                </div>
+              </div>
             </div>
           </ion-accordion>
         </ion-accordion-group>
