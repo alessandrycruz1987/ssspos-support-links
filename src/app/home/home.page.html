@@ -8,56 +8,51 @@
   <ion-grid fixed>
     <ion-row class="ion-justify-content-center">
       <ion-col size-xs="12" size-md="8" size-lg="6">
-        <!-- Technical Support Card -->
-        <ion-card>
-          <ion-card-header>
-            <ion-card-subtitle>
-              {{ 'HOME.SUPPORT_SUB' | translate }}
-            </ion-card-subtitle>
+        <ion-accordion-group expand="inset">
+          <!-- Technical Support Accordion -->
+          <ion-accordion value="support">
+            <ion-item slot="header" color="light">
+              <ion-icon slot="start" name="mail" color="primary"></ion-icon>
 
-            <ion-card-title>
-              {{ 'HOME.SUPPORT_TITLE' | translate }}
-            </ion-card-title>
-          </ion-card-header>
+              <ion-label>
+                <p>{{ 'HOME.SUPPORT_SUB' | translate }}</p>
+                <h2>{{ 'HOME.SUPPORT_TITLE' | translate }}</h2>
+              </ion-label>
+            </ion-item>
 
-          <ion-card-content>
-            {{ 'HOME.SUPPORT_DESC' | translate }}
-          </ion-card-content>
+            <div class="ion-padding" slot="content">
+              <p>{{ 'HOME.SUPPORT_DESC' | translate }}</p>
 
-          <ion-item lines="none" [button]="true" detail="true" href="mailto:alessandrycruz@gmail.com">
-            <ion-icon slot="start" name="mail"></ion-icon>
+              <ion-button expand="block" fill="outline" href="mailto:alessandrycruz@gmail.com" class="ion-margin-top">
+                <ion-icon slot="start" name="mail"></ion-icon>
 
-            <ion-label>
-              {{ 'HOME.SUPPORT_BTN' | translate }}
-            </ion-label>
-          </ion-item>
-        </ion-card>
+                {{ 'HOME.SUPPORT_BTN' | translate }}
+              </ion-button>
+            </div>
+          </ion-accordion>
 
-        <!-- Privacy Card -->
-        <ion-card>
-          <ion-card-header>
-            <ion-card-subtitle>
-              {{ 'HOME.PRIVACY_SUB' | translate }}
-            </ion-card-subtitle>
+          <!-- Privacy Accordion -->
+          <ion-accordion value="privacy">
+            <ion-item slot="header" color="light">
+              <ion-icon slot="start" name="shield-checkmark" color="primary"></ion-icon>
 
-            <ion-card-title>
-              {{ 'HOME.PRIVACY_TITLE' | translate }}
-            </ion-card-title>
-          </ion-card-header>
+              <ion-label>
+                <p>{{ 'HOME.PRIVACY_SUB' | translate }}</p>
+                <h2>{{ 'HOME.PRIVACY_TITLE' | translate }}</h2>
+              </ion-label>
+            </ion-item>
 
-          <ion-card-content>
-            {{ 'HOME.PRIVACY_DESC' | translate }}
-          </ion-card-content>
+            <div class="ion-padding" slot="content">
+              <p>{{ 'HOME.PRIVACY_DESC' | translate }}</p>
 
-          <ion-item lines="none" [button]="true" detail="true" routerLink="/privacy-policy">
-            <ion-icon slot="start" name="shield-checkmark"></ion-icon>
-
-            <ion-label>
-              {{ 'HOME.PRIVACY_BTN' | translate }}
-            </ion-label>
-          </ion-item>
-        </ion-card>
-
+              <ion-item lines="none" [button]="true" detail="true" routerLink="/privacy-policy" class="ion-margin-top">
+                <ion-label color="primary">
+                  {{ 'HOME.PRIVACY_BTN' | translate }}
+                </ion-label>
+              </ion-item>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
       </ion-col>
     </ion-row>
   </ion-grid>

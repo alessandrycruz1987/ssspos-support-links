@@ -13,12 +13,10 @@ import {
   IonIcon,
   IonLabel,
   IonItem,
-  IonCard,
-  IonCardHeader,
-  IonCardSubtitle,
-  IonCardTitle,
-  IonCardContent,
   IonFooter,
+  IonAccordion,
+  IonButton,
+  IonAccordionGroup
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -38,12 +36,10 @@ import {
     IonIcon,
     IonLabel,
     IonItem,
-    IonCard,
-    IonCardHeader,
-    IonCardSubtitle,
-    IonCardTitle,
-    IonCardContent,
     IonFooter,
+    IonAccordion,
+    IonAccordionGroup,
+    IonButton,
     RouterLink
   ],
 })
