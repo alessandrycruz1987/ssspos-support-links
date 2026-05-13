@@ -1,0 +1,32 @@
+{
+    "HOME": {
+        "TITLE": "SSSPOS Ñepytyvõ Rekovoipy",
+        "SUPPORT_SUB": "Tapicha Ñangareko",
+        "SUPPORT_TITLE": "Mba'ehekuaa Ñepytyvõ",
+        "SUPPORT_DESC": "¿Reime vaí ne ñe'ẽveve local ndive térã SSSPOS purúpe? Ore roipytyvõta opa mba'épe.",
+        "SUPPORT_BTN": "Embou kuatiañe'ẽ",
+        "PRIVACY_SUB": "Ñangareko",
+        "PRIVACY_TITLE": "Mba'eñemi",
+        "PRIVACY_DESC": "Eikuaa mba'éichapa roñangareko ne marandukuérare ha ore ñe'ẽme'ẽ ne seguridad rehe SSSPOS-pe.",
+        "PRIVACY_BTN": "Mba'eñemi Rehegua"
+    },
+    "PRIVACY": {
+        "PAGE_TITLE": "Mba'eñemi Rehegua",
+        "CARD_TITLE": "Mba'eñemi ha Marandu Jára",
+        "LAST_UPDATE": "Oñembopyahu: Jasypo 2026",
+        "WELCOME": "Eguahẽ porã <strong>SSSPOS</strong>-pe. Roguerovia ne mba'eha ne mba'erepy marandukuéra. Ko tembiapo oñemboheko oiko ha'eñorei, natekotevẽi internet.",
+        "SEC1_TITLE": "1. Tekoha Local (Offline First)",
+        "SEC1_DESC": "SSSPOS omoambue ne router peteĩ ñanduti imba'eñemíva. Romba'apo <strong>100% offline</strong>, upévare ne ñemu marandukuéra ndosẽi ne rendágui.",
+        "SEC2_TITLE": "2. Marandu Ñembyaty ha Puru",
+        "SEC2_DESC": "Noroñembyatýi ha norovendéi ne marandu. Opa mba'e oñeñongatu <strong>localmente</strong> ne katuha (Servidor) mba'e'okápe.",
+        "SEC3_TITLE": "3. Servidor ha Cliente Juehegua",
+        "SEC3_DESC": "Ñe'ẽ oiko ne <strong>WiFi Local</strong>-pe añónte. Ko'ã marandu opyta ne rendápe ha ndosẽi upégui.",
+        "SEC4_TITLE": "4. Versión Gratuita Rehegua",
+        "SEC4_DESC": "Ko tembiapo reigua ohejante 15 tembi'u jerure peteĩ árape. Kóva oñemohenda ne katuha pype añónte.",
+        "SEC5_TITLE": "5. Nde ha'e Jára",
+        "SEC5_DESC": "Eipurúvo SSSPOS, nde ha'e opa mba'e jára. Emboyke ramo ko app, opa marandu oñemboguepaitéta.",
+        "SEC6_TITLE": "6. Ñe'ẽndy",
+        "SEC6_DESC": "Reikotevẽ ramo marandu ne mba'eñemi rehe, eñe'ẽ oréve ore kuatiañe'ẽ rupive oĩva ko kuatiarogue ñepyrũme.",
+        "FOOTER_NOTE": "Emoimbarete ne ñemu mba'eñemi ha sãso rupive."
+    }
+}
