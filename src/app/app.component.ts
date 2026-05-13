@@ -1,7 +1,10 @@
 // @
 import { inject, Component } from '@angular/core';
-import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { TranslateService } from '@ngx-translate/core';
+import {
+  IonApp,
+  IonRouterOutlet
+} from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-root',
