@@ -6,6 +6,10 @@ import {
   IonRouterOutlet
 } from '@ionic/angular/standalone';
 
+// IONICONS
+import { addIcons } from 'ionicons';
+import { mail, shieldCheckmark } from 'ionicons/icons';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -13,6 +17,13 @@ import {
 })
 export class AppComponent {
   private translate = inject(TranslateService);
+
+  constructor() {
+    addIcons({
+      'mail': mail,
+      'shield-checkmark': shieldCheckmark,
+    });
+  }
 
   ngOnInit(): void {
     this.translate.addLangs(['en-US', 'es-MX', 'gn-PY']);
