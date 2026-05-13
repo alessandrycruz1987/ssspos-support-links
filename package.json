@@ -10,6 +10,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "clean": "rm -rf node_modules package-lock.json",
+    "create": "npm run clean && npm install",
     "build:prod": "ionic build --prod -- --base-href=/ssspos-support-links/ && cp www/index.html www/404.html",
     "upload": "npx angular-cli-ghpages --dir=www",
     "deploy": "npm run build:prod && npm run upload"
