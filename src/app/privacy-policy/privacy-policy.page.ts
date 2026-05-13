@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+// @
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   IonContent,
   IonHeader,
@@ -27,6 +29,7 @@ import {
   styleUrls: ['./privacy-policy.page.scss'],
   standalone: true,
   imports: [
+    TranslateModule,
     IonContent,
     IonHeader,
     IonTitle,
@@ -48,11 +51,6 @@ import {
     FormsModule,
   ]
 })
-export class PrivacyPolicyPage implements OnInit {
-
+export class PrivacyPolicyPage {
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

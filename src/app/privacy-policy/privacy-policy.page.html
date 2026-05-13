@@ -3,7 +3,8 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Privacy Policy</ion-title>
+
+    <ion-title>{{ 'PRIVACY.PAGE_TITLE' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,67 +13,40 @@
     <ion-row class="ion-justify-content-center">
       <ion-col size-xs="12" size-md="10" size-lg="8">
 
-        <ion-card mode="ios">
+        <ion-card>
           <ion-card-header>
-            <ion-card-title>Privacy & Data Sovereignty</ion-card-title>
-            <ion-card-subtitle>Last updated: May 2026</ion-card-subtitle>
+            <ion-card-title>{{ 'PRIVACY.CARD_TITLE' | translate }}</ion-card-title>
+            <ion-card-subtitle>{{ 'PRIVACY.LAST_UPDATE' | translate }}</ion-card-subtitle>
           </ion-card-header>
 
           <ion-card-content class="ion-text-justify">
             <ion-text color="dark">
-              <p class="ion-padding-bottom">
-                Welcome to <strong>SSSPOS</strong>. We believe that your business data belongs to you. Our architecture
-                is designed to provide absolute autonomy without the need for internet contracts or expensive data
-                plans.
-              </p>
+              <p class="ion-padding-bottom" [innerHTML]="'PRIVACY.WELCOME' | translate"></p>
 
-              <h2>1. Local Ecosystem (Offline First)</h2>
-              <p>
-                SSSPOS transforms your router into a private network. Because we operate <strong>100% offline</strong>,
-                your sales information, product lists, and customer interactions never leave your establishment. There
-                is no cloud synchronization, meaning no trackers and no external risks.
-              </p>
+              <h2>{{ 'PRIVACY.SEC1_TITLE' | translate }}</h2>
+              <p [innerHTML]="'PRIVACY.SEC1_DESC' | translate"></p>
 
-              <h2>2. Data Collection & Usage</h2>
-              <p>
-                We do not collect, sell, or trade your business data. All intelligence—including sales charts (daily,
-                weekly, monthly, and yearly) and business insights—is processed and stored <strong>locally</strong> on
-                your Server device.
-              </p>
+              <h2>{{ 'PRIVACY.SEC2_TITLE' | translate }}</h2>
+              <p [innerHTML]="'PRIVACY.SEC2_DESC' | translate"></p>
 
-              <h2>3. Server & Client Synchronization</h2>
-              <p>
-                Communication between the Server Mode and Client Mode occurs strictly within your <strong>Local
-                  WiFi</strong>. SSSPOS uses this connection only to sync menus, process orders, and track preparation
-                status in real-time. This data is volatile and remains within your secure local environment.
-              </p>
+              <h2>{{ 'PRIVACY.SEC3_TITLE' | translate }}</h2>
+              <p [innerHTML]="'PRIVACY.SEC3_DESC' | translate"></p>
 
-              <h2>4. Transparency in the Free Version</h2>
-              <p>
-                The Free version allows up to 15 orders per day in Server mode. This limitation is managed locally by
-                the application logic and does not involve monitoring your business activities from our end.
-              </p>
+              <h2>{{ 'PRIVACY.SEC4_TITLE' | translate }}</h2>
+              <p [innerHTML]="'PRIVACY.SEC4_DESC' | translate"></p>
 
-              <h2>5. Your Control</h2>
-              <p>
-                By using SSSPOS, you maintain total control. If you choose to uninstall the application or clear its
-                data, all your business information is permanently removed from the device, as we do not keep backups on
-                external servers.
-              </p>
+              <h2>{{ 'PRIVACY.SEC5_TITLE' | translate }}</h2>
+              <p [innerHTML]="'PRIVACY.SEC5_DESC' | translate"></p>
 
-              <h2>6. Contact</h2>
-              <p>
-                For any questions regarding your privacy or technical setup, please contact our support team through the
-                official channels listed on our home page.
-              </p>
+              <h2>{{ 'PRIVACY.SEC6_TITLE' | translate }}</h2>
+              <p [innerHTML]="'PRIVACY.SEC6_DESC' | translate"></p>
             </ion-text>
           </ion-card-content>
         </ion-card>
 
         <div class="ion-text-center ion-padding">
-          <ion-note>Empowering your business with privacy and freedom.</ion-note>
+          <ion-note>{{ 'PRIVACY.FOOTER_NOTE' | translate }}</ion-note>
         </div>
-
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -80,6 +54,8 @@
 
 <ion-footer [translucent]="true">
   <ion-toolbar>
-    <ion-title size="small" class="ion-text-center">SSSPOS v1.0.0</ion-title>
+    <ion-title size="small" class="ion-text-center">
+      v1.0.0
+    </ion-title>
   </ion-toolbar>
 </ion-footer>

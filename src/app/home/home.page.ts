@@ -1,5 +1,7 @@
+// @
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   IonHeader,
   IonToolbar,
@@ -16,14 +18,16 @@ import {
   IonCardSubtitle,
   IonCardTitle,
   IonCardContent,
-  IonFooter
+  IonFooter,
 } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
+  standalone: true,
   imports: [
+    TranslateModule,
     IonHeader,
     IonToolbar,
     IonTitle,

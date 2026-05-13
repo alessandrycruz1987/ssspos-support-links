@@ -1,0 +1,32 @@
+{
+    "HOME": {
+        "TITLE": "SSSPOS Support Links",
+        "SUPPORT_SUB": "Customer Service",
+        "SUPPORT_TITLE": "Technical Support",
+        "SUPPORT_DESC": "Are you having trouble configuring your local network or using SSSPOS? Our team is ready to help you resolve any technical questions.",
+        "SUPPORT_BTN": "Contact via Email",
+        "PRIVACY_SUB": "Security",
+        "PRIVACY_TITLE": "Privacy",
+        "PRIVACY_DESC": "Learn how we manage your data and our commitment to the security of your information within SSSPOS.",
+        "PRIVACY_BTN": "Privacy Policy"
+    },
+    "PRIVACY": {
+        "PAGE_TITLE": "Privacy Policy",
+        "CARD_TITLE": "Privacy & Data Sovereignty",
+        "LAST_UPDATE": "Last updated: May 2026",
+        "WELCOME": "Welcome to <strong>SSSPOS</strong>. We believe that your business data belongs to you. Our architecture is designed to provide absolute autonomy without the need for internet contracts or expensive data plans.",
+        "SEC1_TITLE": "1. Local Ecosystem (Offline First)",
+        "SEC1_DESC": "SSSPOS transforms your router into a private network. Because we operate <strong>100% offline</strong>, your sales information, product lists, and customer interactions never leave your establishment.",
+        "SEC2_TITLE": "2. Data Collection & Usage",
+        "SEC2_DESC": "We do not collect, sell, or trade your business data. All intelligence—including sales charts and business insights—is processed and stored <strong>locally</strong> on your Server device.",
+        "SEC3_TITLE": "3. Server & Client Synchronization",
+        "SEC3_DESC": "Communication occurs strictly within your <strong>Local WiFi</strong>. This data is volatile and remains within your secure local environment.",
+        "SEC4_TITLE": "4. Transparency in the Free Version",
+        "SEC4_DESC": "The Free version allows up to 15 orders per day. This limit is managed locally and does not involve monitoring from our end.",
+        "SEC5_TITLE": "5. Your Control",
+        "SEC5_DESC": "By using SSSPOS, you maintain total control. If you uninstall the app, all information is permanently removed from the device.",
+        "SEC6_TITLE": "6. Contact",
+        "SEC6_DESC": "For any questions regarding your privacy, please contact our support team through the official channels listed on our home page.",
+        "FOOTER_NOTE": "Empowering your business with privacy and freedom."
+    }
+}
