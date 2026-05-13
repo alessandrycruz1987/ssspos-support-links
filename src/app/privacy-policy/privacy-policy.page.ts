@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 import {
   IonContent,
   IonHeader,
@@ -20,7 +21,9 @@ import {
   IonCardContent,
   IonText,
   IonFooter,
-  IonNote
+  IonNote,
+  IonIcon,
+  IonButton
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -30,6 +33,7 @@ import {
   standalone: true,
   imports: [
     TranslateModule,
+    RouterLink,
     IonContent,
     IonHeader,
     IonTitle,
@@ -47,6 +51,8 @@ import {
     IonText,
     IonFooter,
     IonNote,
+    IonIcon,
+    IonButton,
     CommonModule,
     FormsModule,
   ]

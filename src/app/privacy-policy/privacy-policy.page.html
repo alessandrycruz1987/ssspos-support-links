@@ -1,10 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-back-button color="primary" defaultHref="/home"></ion-back-button>
     </ion-buttons>
 
     <ion-title>{{ 'PRIVACY.PAGE_TITLE' | translate }}</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/home" routerDirection="root">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

@@ -3,17 +3,24 @@ import { inject, Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import {
   IonApp,
-  IonRouterOutlet
+  IonRouterOutlet,
 } from '@ionic/angular/standalone';
 
 // IONICONS
 import { addIcons } from 'ionicons';
-import { mail, shieldCheckmark } from 'ionicons/icons';
+import {
+  mail,
+  shieldCheckmark,
+  home
+} from 'ionicons/icons';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  imports: [IonApp, IonRouterOutlet],
+  imports: [
+    IonApp,
+    IonRouterOutlet,
+  ],
 })
 export class AppComponent {
   private translate = inject(TranslateService);
@@ -22,6 +29,7 @@ export class AppComponent {
     addIcons({
       'mail': mail,
       'shield-checkmark': shieldCheckmark,
+      'home': home
     });
   }
 
