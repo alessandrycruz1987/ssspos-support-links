@@ -1,0 +1,7 @@
+{
+  "name": "ssspos-support-links",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
